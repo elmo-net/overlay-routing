@@ -1,3 +1,3 @@
 project(routing)
 
-add_library(routing Dummy.hpp)
+add_library(routing Dummy.cpp)
