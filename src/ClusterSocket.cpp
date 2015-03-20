@@ -1,13 +1,13 @@
 #include "ClusterSocket.hpp"
 
 
-ClusterSocket::ClusterSocket()
+net::ClusterSocket::ClusterSocket()
 {}
 
 
-ClusterSocket::~ClusterSocket()
+net::ClusterSocket::~ClusterSocket()
 {}
 
 
-void ClusterSocket::sendMessage(const unsigned char payload[])
+void net::ClusterSocket::sendMessage(const unsigned char payload[])
 {}
