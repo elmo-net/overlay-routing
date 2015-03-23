@@ -1,21 +1,19 @@
 #pragma once
 
-#include <boost/asio/io_service.hpp>
-using boost::asio::io_service;
-
 namespace net {
 
 class ClusterSocket
 {
-    io_service io;
+    //boost::asio::io_service _io_Service;
 
 public:
     ClusterSocket();
-    ClusterSocket(const ClusterSocket& other);
-    ClusterSocket(ClusterSocket&& other) noexcept;
+    //ClusterSocket(boost::asio::io_service io_Service_to_use);
+    ClusterSocket(const ClusterSocket& other) = delete;
+    ClusterSocket(ClusterSocket&& other) = delete;
 
-    ClusterSocket& operator= (const ClusterSocket& other);
-    ClusterSocket& operator= (ClusterSocket&& other) noexcept;
+    ClusterSocket& operator= (const ClusterSocket& other) = delete;
+    ClusterSocket& operator= (ClusterSocket&& other) = delete;
 
     ~ClusterSocket();
 
