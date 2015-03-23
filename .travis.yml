@@ -11,7 +11,8 @@ before_script:
 - cmake ..
 
 script:
-- make all
+- make
+- make test
 
 notifications:
   webhooks:
