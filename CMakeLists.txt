@@ -10,6 +10,9 @@ elseif (MSVC)
     endif()
 endif ()
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake_modules)
+
 find_package(Boost REQUIRED)
 
 add_subdirectory(src)
+add_subdirectory(test)
