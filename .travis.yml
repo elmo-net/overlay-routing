@@ -13,6 +13,7 @@ before_script:
 script:
 - make
 - make test
+- cd test && ctest
 
 notifications:
   webhooks:
