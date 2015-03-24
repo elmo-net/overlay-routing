@@ -13,8 +13,5 @@ ExternalProject_Add(
     LOG_DOWNLOAD ON
 )
 
-
 ExternalProject_Get_Property(fakeit source_dir)
-set(FAKEIT_FOLDERS ${source_dir}/include/ ${source_dir}/config/standalone/)
-set(FAKEIT_INCLUDE_DIR ${FAKEIT_FOLDERS} CACHE INTERNAL "Path to include folder for FakeIt")
-
+set(FAKEIT_INCLUDE_DIR ${source_dir}/include/ ${source_dir}/config/standalone/ CACHE INTERNAL "Path to include folder for FakeIt")
