@@ -16,5 +16,5 @@ ExternalProject_Add(
    )
 
 ExternalProject_Get_Property(fakeit source_dir)
-set(FAKEIT_INCLUDE_DIR ${source_dir}/include ${source_dir}/config/standalone CACHE INTERNAL "Path to include folder for FakeIt")
+set(FAKEIT_INCLUDE_DIR ${source_dir}/include ${source_dir}/include/mockutils ${source_dir}/include/fakeit ${source_dir}/config/standalone CACHE INTERNAL "Path to include folder for FakeIt")
 
