@@ -12,6 +12,7 @@ before_script:
 
 script:
 - make all
+- cd test && ctest
 
 notifications:
   webhooks:
