@@ -1,1 +1,5 @@
 site_name: Elmo-Net Router
+
+pages:
+- ['index.md', 'Introduction']
+- ['spec/intro.md', 'Specification' 'Introduction']
