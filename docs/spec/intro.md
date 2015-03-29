@@ -41,4 +41,18 @@ Programming also meant to have an intimate relationship with your hardware.
 Structure, practice, trucks of coffee and a lot of waiting for the compilers,
 brought Arthur to a top-paid position in the games industry.
 
+### Scenario 3: Suzy
+Suzy got into the industry through her phone if you will. When she graduated
+from her design master, she was interested in developing apps for saving the
+apes in the rain forest. She's all into the open source movement and likes to
+interact with a lot of people on different issues, like apes and rain forests.
+
 ## Non-goals
+
+This spec will mention words like peer-to-peer network, distributed game and
+service discovery, but be warned: *this project is not about filesharing!*
+
+The router component also is not intended to provide higher-level services like
+shared world state in MMOGs or launching nuclear weapons from invisble trucks in
+Afghanistan. If you want to implement such things, you will need to grab the
+tools on top of this library and compose them to your need.
