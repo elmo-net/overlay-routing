@@ -4,19 +4,19 @@ Hans Meyer
 
 Last update: 28.02.2015
 
+This document is also available at http://elmo-net-router.rtfd.org/
+
+*This document is not complete and will updated often. This is to answer
+questions about how things are supposed to work only once in a way for all
+contributors available. Besides, it documents decisions and provides the details
+for everyone involved. The actual look and feel will be developed over time with
+iterative user feedback and research getting into it.*
+
 ## Overview
 
 The router component of Elmo-net is a way to interconnect users through the
 internet. It aims to provide a fast foundation for services in the games
 industry.
-
-This document is not complete and will updated often. This is to answer
-questions about how things work only once in a way for all contributors
-available. Besides, it documents decisions and provides the details for everyone
-involved.
-
-The actual look and feel will be developed over time with iterative user
-feedback and research getting into it.
 
 ## Scenarios
 In designing products, it helps to imagine a few real life stories of how actual
