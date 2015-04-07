@@ -12,6 +12,8 @@ Builds are triggered from GitHub. Linux binaries are built on [TravisCI](https:/
 
 [![](https://img.shields.io/appveyor/ci/HaMster21/router.svg?style=plastic)](https://ci.appveyor.com/project/HaMster21/router) on AppVeyor
 
+[![Coveralls](https://img.shields.io/coveralls/elmo-net/router.svg?style=plastic)](https://coveralls.io/r/elmo-net/router)
+
 ## Join the Development
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/elmo-net/router?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
