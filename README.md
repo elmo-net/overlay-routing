@@ -6,6 +6,8 @@ A little library that implements a [Kademlia](http://www.maymounkov.org/papers/m
 
 ## :see_no_evil: How is the project
 
+Builds are triggered from GitHub. Linux binaries are built on [TravisCI](https://travis-ci.org/), Windows Builds are done on [AppVeyor](https://ci.appveyor.com/projects). Where no current support for C++14 is available, [Clang](http://clang.llvm.org/) is the compiler of choice. All platforms make use of the latest [CMake](http://www.cmake.org/) available to configure the build.
+
 [![Travis](https://img.shields.io/travis/elmo-net/router.svg?style=plastic)](https://travis-ci.org/elmo-net/router) on TravisCI
 
 [![](https://img.shields.io/appveyor/ci/HaMster21/router.svg?style=plastic)](https://ci.appveyor.com/project/HaMster21/router) on AppVeyor
