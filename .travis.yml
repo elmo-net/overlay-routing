@@ -10,8 +10,14 @@ install:
 - scripts/get-cmake.sh
 - sudo apt-get -y -qq install libasio-dev gcc-4.9
 
+after_install:
+- if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.9; fi
+- if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
+
 before_script:
-- echo "CMake has version $(cmake --version)"
+- echo "$(cmake --version)
+        $(gcc --version)
+        "
 - mkdir build && cd build
 - cmake ..
 
@@ -22,7 +28,7 @@ script:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/e49314825582789cb40c
+      - https://webhooks.gitter.im/e/bce99bff09d11703eff7
     on_success: change
     on_failure: always
     on_start: false
