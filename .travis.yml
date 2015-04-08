@@ -11,7 +11,7 @@ install:
 - scripts/get-cmake.sh
 
 # get gcc to a C++14 compatible version
-- sudo apt-get -y -qq install gcc-4.9
+- sudo apt-get -y -qq install g++-4.9
 - ls /usr/bin
 - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
 - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
