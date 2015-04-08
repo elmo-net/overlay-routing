@@ -8,7 +8,7 @@ before_install:
 
 install:
 - scripts/get-cmake.sh
-- sudo apt-get install libasio-dev gcc
+- sudo apt-get -y -qq install libasio-dev gcc-4.9
 
 before_script:
 - echo "CMake has version $(cmake --version)"
