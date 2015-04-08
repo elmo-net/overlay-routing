@@ -9,6 +9,7 @@ before_install:
 
 install:
 - scripts/get-cmake.sh
+- scripts/get-boost.sh
 
 # get gcc to a C++14 compatible version
 - sudo apt-get -y -qq install gcc-4.9 g++-4.9
