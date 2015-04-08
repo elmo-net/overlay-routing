@@ -1,9 +1,9 @@
 language: cpp
 compiler:
 - gcc
-- clang
 
 install:
+- scripts/get-cmake.sh
 - sudo apt-get install libasio-dev
 
 before_script:
