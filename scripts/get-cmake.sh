@@ -14,3 +14,4 @@ case $os in
     *)
         echo Something went wrong;;
 esac
+

@@ -2,11 +2,16 @@ language: cpp
 compiler:
 - gcc
 
+before_install:
+- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test;
+- sudo apt update
+
 install:
 - scripts/get-cmake.sh
-- sudo apt-get install libasio-dev
+- sudo apt-get install libasio-dev gcc
 
 before_script:
+- echo "CMake has version $(cmake --version)"
 - mkdir build && cd build
 - cmake ..
 
