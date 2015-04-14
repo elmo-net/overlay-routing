@@ -26,7 +26,11 @@
 cmake_minimum_required (VERSION 3.0)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules")
 
-find_package(Boost REQUIRED)
+project(router CXX)
 
-add_subdirectory(src)
+# always include public headers
+include_directories(include)
+file(GLOB_RECURSE ELMO_ROUTER_PUBLIC_HEADERS "${CMAKE_SOURCE_DIR}/include/*.hpp")
+
+enable_testing()
 add_subdirectory(test)

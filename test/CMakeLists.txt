@@ -1,14 +1,10 @@
-enable_testing()
+project(router.tests)
 
-project(routing-unit-tests)
-
-set(TEST_SPECS main_test.cpp
-               ClusterSocket_test.cpp)
-
+# Setup Catch for testing
 include(catch)
 include_directories("${CATCH_INCLUDE_DIR}" "${routing_SOURCE_DIR}")
 
-add_executable(exec_tests ${TEST_SPECS})
-add_dependencies(exec_tests catch)
+# Include headers only relevant for tests from test/include
+include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
-add_test(NAME Socket COMMAND exec_tests "[Sockets]" -r junit -o ${CMAKE_BINARY_DIR}/unit-tests.xml)
+#add_test(NAME Socket COMMAND exec_tests "[Sockets]" -r junit -o ${CMAKE_BINARY_DIR}/unit-tests.xml)
