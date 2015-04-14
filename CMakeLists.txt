@@ -21,10 +21,9 @@
 #SOFTWARE.
 
 #This file is part of the elmo-net router project. Issues, current version and
-#contributor communication is available at github.com/elmo-net/router.
+#contributor communication is available at https://github.com/elmo-net/router.
 
 cmake_minimum_required (VERSION 3.0)
-
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules")
 
 find_package(Boost REQUIRED)
